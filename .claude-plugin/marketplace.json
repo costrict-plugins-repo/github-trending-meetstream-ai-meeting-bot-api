@@ -1,0 +1,55 @@
+{
+  "name": "meetstream-ai",
+  "description": "MeetStream plugins for Claude Code: AI notetakers, sales coaches, real-time transcription, Google Calendar auto-recording, and meeting intelligence",
+  "owner": {
+    "name": "MeetStream",
+    "email": "hello@meetstream.ai",
+    "url": "https://meetstream.ai"
+  },
+  "plugins": [
+    {
+      "name": "meetstream",
+      "description": "MeetStream build tracks: the Recording bot (meeting bots, recordings, post-call or real-time transcripts for Zoom, Google Meet and Teams), the Bridge server (agents on your own stack, free local models) and the hosted Agents API (voice agents). Fastest path first: MCP tools or the meetstream CLI, minimal API and SDK calls for app code, with links to the latest docs.",
+      "source": "./",
+      "homepage": "https://meetstream.ai",
+      "category": "developer-tools",
+      "keywords": [
+        "meeting-intelligence",
+        "ai-notetaker",
+        "ai-meeting-assistant",
+        "ai-sales-coach",
+        "ai-meeting-summarizer",
+        "ai-meeting-agent",
+        "ai-call-coaching",
+        "conversation-intelligence",
+        "meeting-transcription",
+        "real-time-transcription",
+        "live-transcription",
+        "speaker-diarization",
+        "meeting-recorder",
+        "meeting-bot",
+        "meeting-bot-api",
+        "meeting-bot-sdk",
+        "live-captions",
+        "meeting-recap",
+        "meeting-action-items",
+        "sales-call-analyzer",
+        "google-calendar-integration",
+        "google-calendar-bot",
+        "calendar-automation",
+        "calendar-notetaker",
+        "scheduled-meeting-bot",
+        "recurring-meeting-bot",
+        "oauth",
+        "zoom",
+        "google-meet",
+        "microsoft-teams",
+        "webhook",
+        "deepgram",
+        "assemblyai",
+        "sarvam",
+        "meetstream"
+      ]
+    }
+  ]
+}

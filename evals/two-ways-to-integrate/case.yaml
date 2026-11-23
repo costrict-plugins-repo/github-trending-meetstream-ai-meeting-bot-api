@@ -1,0 +1,25 @@
+schema_version: "1.1"
+name: two-ways-to-integrate
+description: "Asked which API to start with, the reply gives the three flows (MS-2305): recording with the Bot API first (default); for an agent in the meeting, the user's own stack on a bridge server first, then the hosted Agents API (voice agents, MIA)."
+tags: [round5, routing]
+runs: 1
+execution:
+  prompt: "What can I build with MeetStream, and which of its APIs should I start with? Just explain; don't send a bot."
+  max_turns: 8
+  allowed_tools: [Read, Glob, Grep, Skill]
+graders:
+- name: bot-api
+  type: regex
+  pattern: 'Bot API'
+- name: agents-api
+  type: regex
+  pattern: 'Agents API'
+- name: bridge-before-agents-api
+  type: regex
+  pattern: '(bridge server|own stack)[\s\S]*Agents API'
+  flags: i
+- name: no-bot-sent
+  type: tool_used
+  tool: mcp__plugin_meetstream_meetstream__create_bot
+  min: 0
+  max: 0
